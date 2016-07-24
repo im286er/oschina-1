@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">OSChina</string>
+    <!--综合功能项-->
+    <string name="news_zixun">资讯</string>
+    <string name="news_blog">博客</string>
+    <string name="news_answer">动弹</string>
+    <string name="news_activity">活动</string>
+    <!--我的 界面的文字-->
+    <string name="my_login">未登录</string>
+    <string name="my_news">我的消息</string>
+    <string name="my_blog">我的 博客</string>
+    <string name="my_team">我的团队</string>
+    <string name="my_activity">我的活动</string>
+    <string name="my_label">我的便签</string>
+    <string name="my_feebback">反馈</string>
+    <string name="my_setting">设置</string>
+
+    <!--发现界面的文字-->
+    <string name="found_explore">开源软件</string>
+    <string name="found_user">找人</string>
+    <string name="found_scan">扫一扫</string>
+    <string name="found_shake">摇一摇</string>
+
+
+    <!--访问网站的参数access_token-->
+    <string name="access_token">667f1d08-78fc-4b9a-b862-0c7e0b7192f1</string>
+
+    <!--问答导航文字-->
+    <string name="answer_ask">提问</string>
+    <string name="answer_share">分享</string>
+    <string name="answer_total">综合</string>
+    <string name="answer_occupation">职业</string>
+    <string name="answer_office">站务</string>
+
+</resources>

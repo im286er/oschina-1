@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <group>
+       <item android:id="@+id/sound_send"
+           android:icon="@drawable/actionbar_send_icon"
+           android:title="发布弹动"
+           xmlns:app="http://schemas.android.com/apk/res-auto"
+           app:showAsAction="always"></item>
+   </group>
+</menu>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar_layout"></include>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shaking"
+        android:layout_centerInParent="true"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:id="@+id/shake_priaint"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+        android:id="@+id/shake_title"
+        android:layout_toRightOf="@id/shake_priaint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/checked_green"
+        android:text="xxxxxxxxxxx"/>
+        <TextView
+            android:id="@+id/shake_content"
+            android:layout_toRightOf="@id/shake_priaint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text="xxxxxxxxxxx"
+            android:layout_below="@id/shake_title"/>
+        <TextView
+            android:id="@+id/shake_author"
+            android:layout_toRightOf="@id/shake_priaint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text="xxxxx"
+            android:layout_below="@id/shake_content"/>
+        <TextView
+            android:id="@+id/shake_pubdate"
+            android:layout_toRightOf="@id/shake_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text="11小时前"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/shake_content"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

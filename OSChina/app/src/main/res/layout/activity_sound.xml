@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.liang.oschina.ui.activitys.SoundActivity">
+    <include layout="@layout/toolbar_layout" android:id="@+id/sound_toolbar" />
+    <EditText
+        android:id="@+id/sound_edittext"
+        android:layout_below="@id/sound_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="160"
+        android:gravity="top"
+        android:background="@android:drawable/editbox_background_normal"
+        android:hint="为你的声音附一段描述..."/>
+        <TextView
+            android:id="@+id/sound_maxchar"
+            android:layout_below="@id/sound_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="10dp"
+            android:layout_marginRight="20dp"
+            android:text="你还可以输入160个字符"/>
+
+     <LinearLayout
+         android:layout_below="@id/sound_maxchar"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center_vertical"
+
+         android:orientation="horizontal">
+         <FrameLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+             android:background="@drawable/icon_record_layout_nor"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:text="03”"/>
+     </LinearLayout>
+
+     <RelativeLayout
+         android:id="@+id/sound_record"
+         android:layout_alignParentBottom="true"
+         android:layout_width="match_parent"
+         android:layout_height="200dp"
+         android:layout_gravity="bottom"
+         android:background="@color/bg_white">
+          <ImageButton
+              android:id="@+id/sound_recond_start"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:background="@null"
+              android:src="@drawable/icon_record_play"/>
+         <ImageButton
+             android:id="@+id/sound_listen"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:background="@null"
+             android:layout_marginLeft="20dp"
+             android:src="@drawable/icon_record_listen"/>
+         <ImageButton
+             android:id="@+id/sound_delete"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:background="@null"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="20dp"
+             android:src="@drawable/icon_record_delete"/>
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/sound_recond_start"
+             android:gravity="center"
+             android:layout_marginTop="10dp"
+             android:text="按下 录音"/>
+     </RelativeLayout>
+    <View
+        android:layout_below="@id/sound_record"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/listview_line"/>
+</RelativeLayout>

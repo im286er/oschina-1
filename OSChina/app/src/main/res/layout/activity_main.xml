@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activitys.MainActivity">
+   <!--ToolBar-->
+    <include layout="@layout/toolbar_layout"/>
+
+    <!--FrameLayout-->
+    <FrameLayout
+        android:id ="@+id/osc_frame_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1000"/>
+
+    <!--底部 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="5dp"
+        android:background="#a6a3a3"/>
+    <LinearLayout
+        android:id="@+id/osc_ll_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:weightSum="5">
+        <RadioGroup android:id="@+id/osc_menu_radioGroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center">
+            <RadioButton
+                android:id="@+id/osc_menu_summary"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/osc_menu_selector_sumary"
+                android:text="综合"
+                android:textSize="12dp"
+                android:textColor="#cec4c4c4"
+                android:checked="true"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:background="@android:color/transparent"
+                android:button="@null"/>
+            <RadioButton
+                android:id="@+id/osc_menu_dongtan"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:minHeight="0dp"
+                android:layout_height="match_parent"
+                android:text="动弹"
+                android:textSize="12dp"
+                android:textColor="#cec4c4c4"
+                android:drawableTop="@drawable/osc_menu_selector_tweet"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:button="@null"/>
+            <ImageButton
+                android:id="@+id/osc_menu_add"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:src="@drawable/osc_menu_add"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside" />
+            <RadioButton
+                android:id="@+id/osc_menu_found"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="发现"
+                android:textSize="12dp"
+                android:textColor="#cec4c4c4"
+                android:minHeight="0dp"
+                android:drawableTop="@drawable/osc_menu_selector_found"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:button="@null"/>
+            <RadioButton
+                android:id="@+id/osc_menu_my"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="我的"
+                android:textSize="12dp"
+                android:textColor="#cec4c4c4"
+                android:minHeight="0dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/osc_menu_selector_my"
+                android:gravity="center"
+                android:button="@null"/>
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.liang.oschina.ui.activitys.NewDetailActivity">
+    <include layout="@layout/toolbar_layout"></include>
+
+    <WebView
+        android:id="@+id/news_detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="20" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/listview_line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+        <ImageView
+            android:id="@+id/news_detail_action_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingRight="20dp"
+            android:src="@drawable/btn_opt_tools_to_text_normal" />
+          <FrameLayout
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_height="match_parent">
+              <ImageView
+                  android:id="@+id/news_detail_action_jude"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_gravity="center"
+                  android:paddingRight="10dp"
+                  android:src="@drawable/review_toolbar_normal" />
+          </FrameLayout>
+        <ImageView
+            android:id="@+id/news_detail_action_write"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/ic_action_write_normal" />
+
+        <ImageView
+            android:id="@+id/news_detail_action_favor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/ic_action_favor_normal" />
+
+        <ImageView
+            android:id="@+id/news_detail_action_repost"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/ic_action_repost_normal" />
+    </LinearLayout>
+</LinearLayout>
